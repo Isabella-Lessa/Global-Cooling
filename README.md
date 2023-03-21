@@ -1,6 +1,6 @@
 <h1>Global Cooling</h1>
 
-> Status: Done
+> Status: Done ✅
 
 ### Website about a store specializing in cooling appliances
 
@@ -15,7 +15,10 @@ _Project features_
 + Responsive website
 
 ## Desktop
-<img src='../assets/global-cooling-desktop.png' width= "600" />
+<img src='assets/global-cooling-desktop.png' width= "600" />
 
 ## Mobile
-<img src='../assets/global-cooling-mobile.png' width= "400" />
+<img src='assets/global-cooling-mobile.png' width= "400" />
+
+## GitHub
+<h3>Check out future updates on github: https://github.com/Isabella-Lessa/Global-Cooling/ </h3>
