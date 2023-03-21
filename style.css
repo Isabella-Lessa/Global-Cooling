@@ -1,0 +1,420 @@
+/* @import './assets/BrilhoMark.png'; */
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #4488AA;
+}
+
+
+header{
+    width: 100%;
+    height: 5.5em;
+    background-color: #4488AA;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.10);
+}
+
+.logo-field{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line{
+    background-color: #FFFFFF;
+    height: 0.2em;
+}
+
+.ender{
+    width: 30%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ender p{
+    color: #99EEEE;
+}
+
+.ender p:hover{
+    color: #99EEEE;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
+.ender .tel{
+    color: #99EEEE;
+    text-decoration: none;
+}
+
+.ender .tel:hover{
+    color: #99EEEE;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
+.ender .e-mail{
+    color: #FFFFFF;
+}
+
+.ender .e-mail:hover{
+    color: #99EEEE;
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
+main{
+    height: 50em;
+    padding: 40px;
+    font-family: 'Stoke', serif;
+}
+
+.intro{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.navigation{
+    width: 20%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul{
+    width: 100%;
+    height: 100%;
+    list-style-image: url('assets/BrilhoMark.png');
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+/* .navigation ul li{
+    background-color: pink;
+} */
+
+.navigation ul a{
+    color: #FFFFFF;
+}
+
+.navigation ul a:hover{
+    color: #99EEEE;
+    cursor: pointer;
+}
+
+.apres {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2em;
+    align-items: center;
+}
+
+.apres p{
+    font-size: 18px;
+    color: #99EEEE;
+}
+
+.types{
+    height: 50em;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 60px;
+}
+
+.types h2{
+    color: #99EEEE;
+}
+
+.type-lists{
+    position: relative;
+    padding-left: 60px;
+    font-weight: 200;
+}
+
+.type-lists ol ul{
+    list-style-type: disc;
+    line-height: 200%;
+    padding-left: 30px;
+}
+
+.type-lists ol ul li{
+    color: #99EEEE;
+}
+
+.type-lists ol{
+    color: #FFFFFF;
+}
+
+.tabInfo{
+    width: 350px;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.linTH, .linTD, .preco{
+    border: 3px solid #000055;
+}
+
+thead {
+    background-color: #004499;
+}
+
+thead > tr, tbody > tr > .linTD{
+    padding: 6px;
+}
+
+thead > tr > .linTH{
+    padding: 10px;
+}
+
+thead > tr > .linTH{
+    border: 3px solid #000055;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tbody {
+    background-color: #FFFFFF;
+    padding: 10px;
+    line-height: 180%;
+    color: #000066;
+}
+
+tbody > tr > .preco{
+    color:  #CC0000;
+}
+
+.stockTabInfo{
+    width: 650px;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.stock .stockTabInfo .colTH{
+    background-color: #0066DD;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+.firstForm{
+    width: 50%;
+    height: 55em;
+    padding-top: 70px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.firstForm h3{
+    text-align: center;
+}
+
+.registration{
+    width: 700px;
+}
+
+.fieldsetOne, .fieldsetTwo{
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.fieldsetTwo{
+    height: 20em;
+}
+
+input{
+    padding: 5px;
+}
+
+.emailInput{
+    width: 475px;
+    height: 2.2em;
+    border-radius: 5px;
+    border: none;
+}
+
+.textareaInpt{
+    width: 475px;
+    padding: 5px;
+}
+
+.textareaInptBox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.firstInptBox, .inputBox{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+
+.firstInptBox input{
+    height: 2.2em;
+    border-radius: 5px;
+    border: none;
+}
+
+.finalFieldsets{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.finalFieldsets > .gender, .finalFieldsets > .born{
+    padding: 20px;
+}
+
+.finalFieldsets > .born > .inptRadio{
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fieldsetTwo{
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputBoxTwo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+}
+
+.btnBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 5em;
+}
+
+.btnBox button{
+    width: 100px;
+    height: 2.2em;
+    border: none;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 12em;
+    }
+
+    .logo-field{
+        height: 50%;
+    }
+
+    .ender{
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        height: 60em;
+    }
+
+    .navigation ul a{
+        font-size: 90%;
+    }
+
+    .apres p{
+        line-height: normal;
+        font-size: 90%;
+    }
+
+    .img-main-logo{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 724px){
+    .ender{
+        width: 70%;
+    }
+
+    .navigation ul a{
+        font-size: 70%;
+    }
+
+    .apres{
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .logo-field{
+        height: 40%;
+    }
+
+    .img-logo{
+        width: 400px;
+    }
+
+    .ender{
+        font-size: 13px;
+    }
+
+    main{
+        height: 50em;
+    }
+
+    .img-main-logo{
+        width: 150px;
+    }
+}
