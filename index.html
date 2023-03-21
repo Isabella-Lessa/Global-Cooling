@@ -15,18 +15,224 @@
             </figure>
             <div class="line"></div>
         </div>
-        <div class="text-box">
+        <address class="ender">
             <p>Av. Novaya Zemlya, 1870</p>
-            <p>Cel: (21) 98765-4321</p>
-            <p>contato@resfriglob.com.br</p>
-        </div>
+            <a class="tel" href="tel:+5521987654321" target="_blank">Cel: (21) 98765-4321</a>
+            <a class="e-mail" href="mailto:contato@resfriglob.com.br" target="_blank">contato@resfriglob.com.br</a>
+        </address>
     </header>
 
-    <!-- <main>
+    <main>
+        <section class="intro">
+        <nav class="navigation">
+            <ul>
+                <a href="#">
+                    <li>Apresentação</li>
+                </a>
+                <a href="#">
+                    <li>Tipos</li>
+                </a>
+                <a href="#">
+                    <li>Estoque</li>
+                </a>
+                <a href="#">
+                    <li>Cadastro</li>
+                </a>
+                <a href="#">
+                    <li>Compras</li>
+                </a>
+            </ul>
+        </nav>
 
+        <div class="apres">
+            <p>Pare de sentir calor!</p>
+            <p>Sinta o clima da idade do gelo aderindo ao</p>
+            <figure class="fig-main">
+                <img class="img-main-logo" src="assets/ResfGlobLogo.png" alt="main-logo">
+            </figure>
+        <p>Encontre aqui o ar-condicionado</p>
+        <p>ideal para sua casa.</p>
+        </div>
+    </section>
+
+    <section class="types">
+        <h2>Como escolher um ar-condicionado?</h2>
+        <div class="type-lists">
+            <ol>
+                <li>Tipo:</li>
+                <ul>
+                    <li>de Parede</li>
+                    <li>Spliter</li>
+                    <li>Portátil</li>
+                </ul>
+                <li class="table-item">
+                    Capacidade:
+                </li>
+                <table class="tabInfo">
+                    <thead>
+                        <tr>
+                            <th class="linTH" scope="col" rowspan="2">Área</th>
+                            <th class="linTH" scope="col" colspan="2">Incidência do sol</th>
+                        </tr>
+
+                        <tr>
+                            <th class="linTH">Manhã</th>
+                            <th class="linTH">Tarde</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                         <tr>
+                             <td class="linTD">9 m²</td>
+                             <td class="linTD">7500 BTUs</td>
+                             <td class="linTD">9000 BTUs</td>
+                         </tr>
+                         <tr>
+                             <td class="linTD">12 m²</td>
+                             <td class="linTD">9000 BTUs</td>
+                             <td class="linTD">10000 BTUs</td>
+                         </tr>
+                         <tr>
+                             <td class="linTD">25 m²</td>
+                             <td class="linTD">12000 BTUs</td>
+                             <td class="linTD">15000 BTUs</td>
+                         </tr>
+                         <tr>
+                             <td class="linTD">50 m²</td>
+                             <td class="linTD">21000 BTUs</td>
+                             <td class="linTD">30000 BTUs</td>
+                         </tr>
+                     </tbody>
+                </table>
+            </ol>
+        </div>
+    </section>
+
+    <section class="stock">
+        <table class="stockTabInfo">
+            <thead>
+                <tr>
+                    <th class="linTH" colspan="5">Estoque</th>
+                </tr>
+                <tr>
+                    <th class="linTH">Marca</th>
+                    <th class="linTH">Foto</th>
+                    <th class="linTH">Capacidade</th>
+                    <th class="linTH">Tipo</th>
+                    <th class="linTH">Preço</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="linTD">
+                    <th class="colTH" rowspan="2">Springer</th>
+                    <td class="linTD">
+                        <img src="assets/SpringerSplit12000.jpg" alt="springer-split">
+                    </td>
+                    <td class="linTD">12000</td>
+                    <td class="linTD">Split</td>
+                    <td class="preco">R$1680,00</td>
+                </tr>
+                <tr class="linTD">
+                    <td class="linTD">
+                        <img src="assets/SpringerParede12000.jpg" alt="springer-parede">
+                    </td>
+                    <td class="linTD">12000</td>
+                    <td class="linTD">Parede</td>
+                    <td class="preco">R$1890,00</td>
+                </tr>
+                <tr class="linTD">
+                    <th class="colTH">Consul</th>
+                   <td class="linTD">
+                        <img src="assets/ConsulParede7500.jpg" alt="">
+                    </td>
+                    <td class="linTD">7500</td>
+                    <td class="linTD">Parede</td>
+                    <td class="preco">R$1300,00</td>
+                </tr>
+                <tr class="linTD">
+                    <th class="colTH">Elgin</th>
+                   <td class="linTD">
+                        <img src="assets/ElginPortatil9000.jpg" alt="">
+                    </td>
+                    <td class="linTD">9000</td>
+                    <td class="linTD">Portátil</td>
+                    <td class="preco">1900</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="firstForm">
+        <h3>Cadastro</h3>
+        <form class="registration" action=".">
+            <fieldset class="fieldsetOne">
+                <legend>Identificação</legend>
+                <div class="inputBox">
+                    <label for="emailInpt">E-mail:</label>
+                    <input class="emailInput" type="email" name="email" id="emailInpt">
+                </div>
+                <div class="firstInptBox">
+                    <label for="passwordInpt">Senha:</label>
+                    <input type="password" name="password" id="passwordInpt">
+                    <label for="textInpt">Confirme:</label>
+                    <input type="text" name="text" id="textInpt">
+                </div>
+            </fieldset>
+        </form>
+
+            <form class="personalData" action=".">
+                <fieldset class="fieldsetTwo">
+                    <legend>Dados Pessoais</legend>
+                    <div class="inputBoxTwo">
+                        <label for="nameInpt">Nome:</label>
+                        <input class="emailInput" type="text" name="name" id="nameInpt">
+                    </div>
+                    <div class="textareaInptBox">
+                        <label for="andressInpt">Endereço:</label>
+                        <textarea class="textareaInpt" rows="5" cols="33" name="adress" id="andressInpt">aaaaaa</textarea>
+                    </div>
+                    <div class="firstInptBox">
+                        <label for="telInpt">Telefone:</label>
+                        <input type="number" name="tel" id="telInpt">
+                        <label for="textInpt">Celular:</label>
+                        <input type="number" name="text" id="textInpt">
+                    </div>
+
+                    <div class="finalFieldsets">
+                        <fieldset class="born">
+                            <legend>Nascimento: </legend>
+                            <input class="inptRadio" type="number" name="date" id="date">
+                            /
+                            <input class="inptRadio" type="number" name="month" id="month">
+                            /
+                            <input class="inptRadio" type="number" name="year" id="year">
+                        </fieldset>
+                        <fieldset class="gender">
+                            <legend>Sexo: </legend>
+                            <input type="radio" name="radio" id="mas">
+                            <label for="mas">Mas</label>
+                            <input type="radio" name="radio" id="fem">
+                            <label for="fem">Fem</label>
+                            <input type="radio" name="radio" id="another">
+                            <label for="another">Outro</label>
+                        </fieldset>
+                    </div>
+
+                </fieldset>
+            </form>
+        <div class="btnBox">
+            <button>
+                Cadastrar
+            </button>
+            <button>
+                Limpar
+            </button>
+        </div>
+    </section>
     </main>
 
-    <footer>
+    <!-- <footer>
 
     </footer> -->
 </body>
