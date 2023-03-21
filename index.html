@@ -163,16 +163,19 @@
         </table>
     </section>
 
-    <section class="firstForm">
+
+    <section class="registrationBox">
+    <div class="registrationForms">
         <h3>Cadastro</h3>
+
         <form class="registration" action=".">
             <fieldset class="fieldsetOne">
                 <legend>Identificação</legend>
-                <div class="inputBox">
+                <div class="inputBoxOne">
                     <label for="emailInpt">E-mail:</label>
                     <input class="emailInput" type="email" name="email" id="emailInpt">
                 </div>
-                <div class="firstInptBox">
+                <div class="inputBoxTwo">
                     <label for="passwordInpt">Senha:</label>
                     <input type="password" name="password" id="passwordInpt">
                     <label for="textInpt">Confirme:</label>
@@ -184,15 +187,15 @@
             <form class="personalData" action=".">
                 <fieldset class="fieldsetTwo">
                     <legend>Dados Pessoais</legend>
-                    <div class="inputBoxTwo">
+                    <div class="inputBoxOne">
                         <label for="nameInpt">Nome:</label>
                         <input class="emailInput" type="text" name="name" id="nameInpt">
                     </div>
                     <div class="textareaInptBox">
-                        <label for="andressInpt">Endereço:</label>
-                        <textarea class="textareaInpt" rows="5" cols="33" name="adress" id="andressInpt">aaaaaa</textarea>
+                        <label for="andressInpt">Endereço: </label>
+                        <textarea class="textareaInpt" rows="5" cols="33" name="adress" id="andressInpt"></textarea>
                     </div>
-                    <div class="firstInptBox">
+                    <div class="inputBoxTwo">
                         <label for="telInpt">Telefone:</label>
                         <input type="number" name="tel" id="telInpt">
                         <label for="textInpt">Celular:</label>
@@ -208,6 +211,7 @@
                             /
                             <input class="inptRadio" type="number" name="year" id="year">
                         </fieldset>
+
                         <fieldset class="gender">
                             <legend>Sexo: </legend>
                             <input type="radio" name="radio" id="mas">
@@ -229,6 +233,115 @@
                 Limpar
             </button>
         </div>
+    </div>
+    </section>
+
+    <section class="shoppingBox">
+        <div class="shoppingForms">
+        <h3>Compras</h3>
+        <form action="." class="identify">
+        <fieldset class="fieldsetIdentify">
+            <legend>Identificação</legend>
+            <div class="indetifyBox">
+                <label for="emailTwo">E-mail: </label>
+                <input type="email" name="email" id="emailTwo">
+                <label for="passwordTwo">Senha: </label>
+                <input type="password" name="password" id="passwordTwo">
+            </div>
+            <i>Se você ainda não tem cadastro clique <a href="#">aqui!</a></i>
+        </fieldset>
+    </form>
+
+        <form action=".">
+        <fieldset class="fieldsetShopping">
+            <legend>Lista de Compras</legend>
+            <div class="productsBoxOne">
+                <div class="productsBox">
+                    <label for="products">Produtos: </label>
+                    <select name="products" id="products">
+                           <option value="default">-----</option>
+                        <optgroup label="Split">
+                            <option value="Split">Springer Split 12000</option>
+                        </optgroup>
+                        <optgroup label="Parede">
+                            <option value="Parede">Springer Midea 12000</option>
+                            <option value="Consul">Consul 7500</option>
+                        </optgroup>
+                        <optgroup label="Portátil">
+                            <option value="Portátil">Elgin Eco Clube 9000</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="btnBoxProduct">
+                    <button>Incluir</button>
+                </div>
+            </div>
+
+            <textarea class="textareaProducts" name="productsArea" id="productsArea" cols="30" rows="10"></textarea>
+
+            <div class="valueBox">
+                <div class="valueBoxTwo">
+                    <label for="valueField">Valor: R$ </label>
+                    <input type="number" name="numberValue" id="valueField">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <form action=".">
+        <fieldset class="fieldsetCard">
+            <legend>Dados do cartão</legend>
+            <div class="cardBox">
+                <div class="cardNumberBox">
+                    <label for="cardNumber">Número: </label>
+                    <div class="numberInptBox">
+                        <input type="number" name="number" id="cardNumber">
+                        <input type="number" name="number" id="cardNumber">
+                        <input type="number" name="number" id="cardNumber">
+                        <input type="number" name="number" id="cardNumber">
+                    </div>
+                </div>
+
+                <div class="validityBox">
+                    <label for="validity">Validade: </label>
+                    <div class="validityInptBox">
+                        <input type="number" name="number" id="validity">
+                        /
+                        <input type="number" name="number" id="validity">
+                    </div>
+                </div>
+
+                <div class="installmentsBox">
+                    <div class="installmentsSmallBox">
+                        <label for="installments">Parcelas: </label>
+                        <input type="number" name="number" id="installments">
+                    </div>
+                    <p> x Sem Juros</p>
+                </div>
+            </div>
+
+            <fieldset class="cardMark">
+                <legend>Bandeira:</legend>
+                <div class="visaBox">
+                    <input type="radio" name="card" id="visa">
+                    <label for="visa">Visa</label>
+                </div>
+                <div class="masterBox">
+                    <input type="radio" name="card" id="master">
+                    <label for="master">Master</label>
+                </div>
+                <div>
+                    <input type="radio" name="card" id="elo">
+                    <label for="elo">Elo</label>
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+    <div class="btnBoxShopp">
+        <button>Confirmar</button>
+        <button>Limpar</button>
+    </div>
+    </div>
     </section>
     </main>
 
