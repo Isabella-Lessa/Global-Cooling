@@ -71,11 +71,6 @@ header{
     color: #FFFFFF;
 }
 
-/* .ender .e-mail:hover{
-    color: #99EEEE;
-    cursor: pointer;
-} */
-
 main{
     height: 50em;
     padding: 40px;
@@ -238,7 +233,6 @@ tbody > tr > .preco{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* padding: 30px; */
 }
 
 .btnBoxShopp{
