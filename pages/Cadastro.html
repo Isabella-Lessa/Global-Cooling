@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="registrationBox">
+            <div class="registrationForms">
+                <h3>Cadastro</h3>
+        
+                <form class="registration" action=".">
+                    <fieldset class="fieldsetOne">
+                        <legend>Identificação</legend>
+                        <div class="inputBoxOne">
+                            <label for="emailInpt">E-mail:</label>
+                            <input class="emailInput" type="email" name="email" id="emailInpt">
+                        </div>
+                        <div class="inputBoxTwo">
+                            <label for="passwordInpt">Senha:</label>
+                            <input type="password" name="password" id="passwordInpt">
+                            <label for="textInpt">Confirme:</label>
+                            <input type="text" name="text" id="textInpt">
+                        </div>
+                    </fieldset>
+                </form>
+        
+                    <form class="personalData" action=".">
+                        <fieldset class="fieldsetTwo">
+                            <legend>Dados Pessoais</legend>
+                            <div class="inputBoxOne">
+                                <label for="nameInpt">Nome:</label>
+                                <input class="emailInput" type="text" name="name" id="nameInpt">
+                            </div>
+                            <div class="textareaInptBox">
+                                <label for="andressInpt">Endereço: </label>
+                                <textarea class="textareaInpt" rows="5" cols="33" name="adress" id="andressInpt"></textarea>
+                            </div>
+                            <div class="inputBoxTwo">
+                                <label for="telInpt">Telefone:</label>
+                                <input type="number" name="tel" id="telInpt">
+                                <label for="textInpt">Celular:</label>
+                                <input type="number" name="text" id="textInpt">
+                            </div>
+        
+                            <div class="finalFieldsets">
+                                <fieldset class="born">
+                                    <legend>Nascimento: </legend>
+                                    <input class="inptRadio" type="number" name="date" id="date">
+                                    /
+                                    <input class="inptRadio" type="number" name="month" id="month">
+                                    /
+                                    <input class="inptRadio" type="number" name="year" id="year">
+                                </fieldset>
+        
+                                <fieldset class="gender">
+                                    <legend>Sexo: </legend>
+                                    <input type="radio" name="radio" id="mas">
+                                    <label for="mas">Mas</label>
+                                    <input type="radio" name="radio" id="fem">
+                                    <label for="fem">Fem</label>
+                                    <input type="radio" name="radio" id="another">
+                                    <label for="another">Outro</label>
+                                </fieldset>
+                            </div>
+        
+                        </fieldset>
+                    </form>
+                <div class="btnBox">
+                    <button>
+                        Cadastrar
+                    </button>
+                    <button>
+                        Limpar
+                    </button>
+                </div>
+            </div>
+            </section>
+    </main>
+</body>
+</html>

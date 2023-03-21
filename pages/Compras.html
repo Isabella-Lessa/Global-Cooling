@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+    <main>
+        <section class="shoppingBox">
+            <div class="shoppingForms">
+            <h3>Compras</h3>
+            <form action="." class="identify">
+            <fieldset class="fieldsetIdentify">
+                <legend>Identificação</legend>
+                <div class="indetifyBox">
+                    <label for="emailTwo">E-mail: </label>
+                    <input type="email" name="email" id="emailTwo">
+                    <label for="passwordTwo">Senha: </label>
+                    <input type="password" name="password" id="passwordTwo">
+                </div>
+                <i>Se você ainda não tem cadastro clique <a href="../pages/Cadastro.html">aqui!</a></i>
+            </fieldset>
+        </form>
+    
+            <form action=".">
+            <fieldset class="fieldsetShopping">
+                <legend>Lista de Compras</legend>
+                <div class="productsBoxOne">
+                    <div class="productsBox">
+                        <label for="products">Produtos: </label>
+                        <select name="products" id="products">
+                               <option value="default">-----</option>
+                            <optgroup label="Split">
+                                <option value="Split">Springer Split 12000</option>
+                            </optgroup>
+                            <optgroup label="Parede">
+                                <option value="Parede">Springer Midea 12000</option>
+                                <option value="Consul">Consul 7500</option>
+                            </optgroup>
+                            <optgroup label="Portátil">
+                                <option value="Portátil">Elgin Eco Clube 9000</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="btnBoxProduct">
+                        <button>Incluir</button>
+                    </div>
+                </div>
+    
+                <textarea class="textareaProducts" name="productsArea" id="productsArea" cols="30" rows="10"></textarea>
+    
+                <div class="valueBox">
+                    <div class="valueBoxTwo">
+                        <label for="valueField">Valor: R$ </label>
+                        <input type="number" name="numberValue" id="valueField">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    
+        <form action=".">
+            <fieldset class="fieldsetCard">
+                <legend>Dados do cartão</legend>
+                <div class="cardBox">
+                    <div class="cardNumberBox">
+                        <label for="cardNumber">Número: </label>
+                        <div class="numberInptBox">
+                            <input type="number" name="number" id="cardNumber">
+                            <input type="number" name="number" id="cardNumber">
+                            <input type="number" name="number" id="cardNumber">
+                            <input type="number" name="number" id="cardNumber">
+                        </div>
+                    </div>
+    
+                    <div class="validityBox">
+                        <label for="validity">Validade: </label>
+                        <div class="validityInptBox">
+                            <input type="number" name="number" id="validity">
+                            /
+                            <input type="number" name="number" id="validity">
+                        </div>
+                    </div>
+    
+                    <div class="installmentsBox">
+                        <div class="installmentsSmallBox">
+                            <label for="installments">Parcelas: </label>
+                            <input type="number" name="number" id="installments">
+                        </div>
+                        <p> x Sem Juros</p>
+                    </div>
+                </div>
+    
+                <fieldset class="cardMark">
+                    <legend>Bandeira:</legend>
+                    <div class="visaBox">
+                        <input type="radio" name="card" id="visa">
+                        <label for="visa">Visa</label>
+                    </div>
+                    <div class="masterBox">
+                        <input type="radio" name="card" id="master">
+                        <label for="master">Master</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="card" id="elo">
+                        <label for="elo">Elo</label>
+                    </div>
+                </fieldset>
+            </fieldset>
+        </form>
+        <div class="btnBoxShopp">
+            <button>Confirmar</button>
+            <button>Limpar</button>
+        </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
