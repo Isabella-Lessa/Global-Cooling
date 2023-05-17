@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script src="../script.js"></script>r
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../assets/title-global-logo.png" type="image/png">
     <meta charset="UTF-8">
@@ -14,15 +15,29 @@
             <h2>Como escolher um ar-condicionado?</h2>
             <div class="type-lists">
                 <ol>
-                    <li>Tipo:</li>
-                    <ul>
-                        <li>de Parede</li>
-                        <li>Spliter</li>
-                        <li>Portátil</li>
-                    </ul>
-                    <li class="table-item">
-                        Capacidade:
-                    </li>
+                    <a href="#" onclick="handleModal()" id="openModalLink">
+                        <li>Tipos</li>
+                    </a>
+            <div class="modal">
+                <h2 class="modalTypeTitle" >Tipos de Ar-condicionado</h2>
+                <div>
+                <ul class="modalTypeTitle">
+                  <li>De Parede</li>
+                  <li>Spliter</li>
+                  <li>Portátil</li>
+              </ul>
+            </div>
+            <button onclick="handleClose()" class="closeModal">
+                Fechar
+            </button>
+            </div>
+            <a href="#" onclick="modal2Test()" id="openModalLink">
+                <li class="table-item">
+                    Capacidade:
+                </li>
+                </a>
+                <div class="modal2">
+                    <h2 class="modalTypeTitle">Tamanho do Cômodo</h2>
                     <table class="tabInfo">
                         <thead>
                             <tr>
@@ -59,6 +74,10 @@
                              </tr>
                          </tbody>
                     </table>
+                <button onclick="handleClose2()" class="closeModal2">
+                    Fechar
+                </button>
+                </div>
                 </ol>
             </div>
         </section>

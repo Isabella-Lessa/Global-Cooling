@@ -104,7 +104,7 @@ main{
     justify-content: space-evenly;
 }
 
-.navigation ul a{
+.navigation ul a, .type-lists ol a{
     color: #FFFFFF;
 }
 
@@ -141,11 +141,11 @@ main{
     color: #99EEEE;
 }
 
-.type-lists{
+/* .type-lists{
     position: relative;
     padding-left: 60px;
     font-weight: 200;
-}
+} */
 
 .type-lists ol ul{
     list-style-type: disc;
@@ -162,9 +162,9 @@ main{
 }
 
 .tabInfo{
-    width: 350px;
+    width: 300px;
     border-collapse: collapse;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .linTH, .linTD, .preco{
@@ -477,6 +477,63 @@ input, select{
     border-radius: 5px;
     margin-left: 5px;
     font-family: "Lucida Bright", Georgia, serif;
+}
+
+.modal{
+    width: 250px;
+    height: 200px;
+    background-color: #4488aa;
+    box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    animation: animate;
+    animation-duration: 500ms;
+}
+
+.modal2{
+    width: 370px;
+    height: 440px;
+    background-color: #4488aa;
+    box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 26px 7px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    animation: animate;
+    animation-duration: 500ms;
+}
+
+.modalTypeTitle{
+    color: #99EEEE;
+    font-size: 16px;
+}
+
+.closeModal, .closeModal2{
+    animation: animate;
+    animation-duration: 500ms;
+    width: 60px;
+    height: 20px;
+    border-radius: 2px;
+    border: none
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
 }
 
 
